@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brion Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Brion" class="logo">
+    <h1>Brion</h1>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="homeSection" class="active carousel-section">
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="img1.jpg" alt="Slide 1">
+      <img src="img2.jpg" alt="Slide 2">
+      <img src="img3.jpg" alt="Slide 3">
+    </div>
+    <h2 class="carousel-title">Bridge of Education</h2>
+  </div>
+
+  <h3 class="subjudul">Belajar kapan saja, di mana saja, dengan Brion!</h3>
+  <div class="info-grid">
+  <div class="info-card">
+    <h3> 🧐 What is Brion?</h3>
+    <p>BRION adalah singkatan dari Bridge of Education, yaitu jembatan edukasi yang menghubungkan siswa SMA dengan sumber belajar interaktif. Melalui platform ini, BRION berperan sebagai penghubung antara kebutuhan siswa dalam memahami materi dan tantangan tes seleksi perguruan tinggi negeri dengan penyajian latihan soal, evaluasi, serta konten pembelajaran yang terstruktur.</p>
+  </div>
+
+  <div class="info-card">
+    <h3> 🤔 Why Brion?</h3>
+    <p>BRION hadir karena banyak siswa SMA menghadapi tantangan dalam memperoleh materi belajar yang tepat dan berkualitas untuk persiapan tes seleksi perguruan tinggi negeri. Dengan pendekatan interaktif dan berbasis evaluasi, BRION memberikan pengalaman belajar yang lebih fokus, terarah, dan menyenangkan dibandingkan sekadar membaca buku atau catatan.</p>
+  </div>
+
+  <div class="info-card">
+    <h3> 🤔 How to Use Brion?</h3>
+    <p>Menggunakan BRION semudah mengikuti alur belajar yang telah disiapkan. Mulailah dengan pre-test untuk mengetahui kemampuan awal, lalu pelajari materi interaktif yang dirancang ringkas dan menarik. Setelah itu, uji kembali pemahaman melalui post-test agar perkembangan belajar siswa terlihat jelas. Dengan langkah yang praktis ini, BRION memastikan setiap siswa belajar lebih efektif, terarah, dan siap menghadapi ujian seleksi perguruan tinggi.</p>
+  </div>
+</div>
+  
+  <div class="button-container">
+    <button class="startBtn">Mulai Belajar</button>
+  </div>
+</section>
+
+
+    <!-- MATERI -->
+    <section id="materiSection">
+  <h2>Pilih Materi</h2>
+  <div class="materi-container"></div>
+    <div class="materi" data-id="1">Penalaran Umum (PU) 1<span id="status1"></span></div>
+    <div class="materi" data-id="2">Materi 2 <span id="status2"></span></div>
+    <div class="materi" data-id="3">Materi 3 <span id="status3"></span></div>
+  </div>
+</section>
+
+
+
+    <!-- PRETEST -->
+<section id="preTestSection">
+  <h2>Pre-Test PU <span id="preTestMateriId"></span></h2>
+  <p>(Dummy soal pre-test)</p>
+  <div class="button-container">
+    <button id="submitPreTest">Kumpulkan</button>
+  </div>
+</section>
+
+<!-- MATERI -->
+<section id="materiContentSection">
+  <h2>Materi <span id="materiId"></span></h2>
+  <p>Tonton video pembelajaran berikut:</p>
+  <a id="materiVideo" href="#" target="_blank">
+    <img id="materiThumb" 
+         src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" 
+         alt="Thumbnail YouTube">
+  </a>
+  <div class="button-container">
+    <button id="finishMateri">Selesai Materi</button>
+  </div>
+</section>
+
+<!-- POSTTEST -->
+<section id="postTestSection">
+  <h2>Post-Test PU <span id="postTestMateriId"></span></h2>
+  <p>(Dummy soal post-test)</p>
+  <div class="button-container">
+    <button id="submitPostTest">Kumpulkan & Lihat Nilai</button>
+  </div>
+</section>
+
+<!-- HASIL -->
+<section id="resultSection">
+  <p id="affirmationText"></p>
+  <div class="button-container">
+    <button id="backToHome">Kembali ke Awal</button>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
